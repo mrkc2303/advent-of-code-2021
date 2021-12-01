@@ -1,6 +1,6 @@
 # Day-1
 
-## Task-1
+## Part-1
 
 ### Problem Statement
 
