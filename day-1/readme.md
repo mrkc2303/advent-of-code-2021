@@ -42,7 +42,7 @@ To do this, count the __number of times a depth measurement increases from the p
 
 In this example, there are 7 measurements that are larger than the previous measurement.
 
-**OUPUT for provided custom input inside input.txt ** `1457`
+**OUPUT for provided custom input inside input.txt ** `1390`
 
 ## Part-2
 
