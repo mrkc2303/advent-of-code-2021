@@ -18,3 +18,5 @@ int main() {
 	cout << count;
 	return 0;
 }
+
+//OUTPUT for provided custom input is 1457
