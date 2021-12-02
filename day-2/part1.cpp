@@ -3,16 +3,16 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	int n, forward=0, depth=0;
+	int x, forward=0, depth=0;
 	string dir;
 	
-	while (cin >> dir && cin >> n) {
+	while (cin >> dir && cin >> x) {
 	    if (dir == "forward") 
-	        forward += n;
+	        forward += x;
 	    else if (dir == "up")
-	        depth -= n;
+	        depth -= x;
 	    else if (dir == "down")
-	        depth += n;
+	        depth += x;
 	}
 	cout << forward*depth;
 	return 0;
