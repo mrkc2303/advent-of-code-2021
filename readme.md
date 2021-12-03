@@ -1,4 +1,4 @@
-<img src="/Advent of Code.png" width="350" align="right" />
+<img src="https://user-images.githubusercontent.com/67221487/144581174-7da76d34-6b88-49e7-849f-019e29643a7a.png" width="350" align="right" />
 
 # Advent of Code 2021
 
