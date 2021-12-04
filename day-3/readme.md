@@ -37,3 +37,6 @@ The epsilon rate is calculated in a similar way; rather than use the most common
 Use the binary numbers in your diagnostic report to calculate the gamma rate and epsilon rate, then multiply them together. **What is the power consumption of the submarine?** (Be sure to represent your answer in decimal, not binary.)
 
 OUPUT for provided custom input inside input.txt `3309596`
+
+## Part-2
+### Problem Statement
