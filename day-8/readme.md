@@ -28,3 +28,7 @@ b    .  b    .  .    c  b    c  b    c
 .    f  e    f  .    f  e    f  .    f
  gggg    gggg    ....    gggg    gggg
 ```
+
+So, to render a `1`, only segments `c` and `f` would be turned on; the rest would be off. To render a `7`, only segments `a`, `c`, and `f` would be turned on.
+
+The problem is that the signals which control the segments have been mixed up on each display. The submarine is still trying to display numbers by producing output on signal wires `a` through `g`, but those wires are connected to segments **randomly**. Worse, the wire/segment connections are mixed up separately for each four-digit display! (All of the digits within a display use the same connections, though.)
