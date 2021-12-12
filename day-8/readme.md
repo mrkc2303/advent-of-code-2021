@@ -38,3 +38,15 @@ So, you might know that only signal wires b and g are turned on, but that doesn'
 For each display, you watch the changing signals for a while, make a note of **all ten unique signal patterns** you see, and then write down a single **four digit output value** (your puzzle input). Using the signal patterns, you should be able to work out which pattern corresponds to which digit.
 
 For example, here is what you might see in a single entry in your notes:
+
+```
+acedgfb cdfbe gcdfa fbcad dab cefabd cdfgeb eafb cagedb ab |
+cdfeb fcadb cdfeb cdbaf
+```
+
+Each entry consists of ten **unique signal patterns**, a `|` delimiter, and finally the **four digit output value**. Within an entry, the same wire/segment connections are used (but you don't know what the connections actually are). The unique signal patterns correspond to the ten different ways the submarine tries to render a digit using the current wire/segment connections. Because `7` is the only digit that uses three segments, dab in the above example means that to render a `7`, signal lines `d`, `a`, and `b` are on. Because `4` is the only digit that uses four segments, eafb means that to render a 4, signal lines `e`, `a`, `f`, and `b` are on.
+
+Using this information, you should be able to work out which combination of signal wires corresponds to each of the ten digits. Then, you can decode the four digit output value. Unfortunately, in the above example, all of the digits in the output value ``(cdfeb fcadb cdfeb cdbaf)`` use five segments and are more difficult to deduce.
+
+For now, **focus on the easy digits**. Consider this larger example:
+
