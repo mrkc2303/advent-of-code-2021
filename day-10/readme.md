@@ -14,3 +14,26 @@ The navigation subsystem syntax is made of several lines containing chunks. Ther
 * If a chunk opens with `[`, it must close with `]`.
 * If a chunk opens with `{`, it must close with `}`.
 * If a chunk opens with `<`, it must close with `>`.
+
+So, `()` is a legal chunk that contains no other chunks, as is `[]`. More complex but valid chunks include `([])`, `{()()()}`, `([{}])>`, `[<>({}){}[([])<>]]`, and even `(((((((((())))))))))`.
+
+Some lines are **incomplete**, but others are **corrupted**. Find and discard the corrupted lines first.
+
+A corrupted line is one where a chunk **closes with the wrong character** - that is, where the characters it opens and closes with do not form one of the four legal pairs listed above.
+
+Examples of corrupted chunks include `(]`, `{()()()>`, `(((()))}`, and `<([]){()}[{}])`. Such a chunk can appear anywhere within a line, and its presence causes the whole line to be considered corrupted.
+
+For example, consider the following navigation subsystem:
+
+```
+[({(<(())[]>[[{[]{<()<>>
+[(()[<>])]({[<{<<[]>>(
+{([(<{}[<>[]}>{[]{[(<()>
+(((({<>}<{<{<>}{[]{[]{}
+[[<[([]))<([[{}[[()]]]
+[{[{({}]{}}([{[{{{}}([]
+{<[[]]>}<{[{[{[]{()[[[]
+[<(<(<(<{}))><([]([]()
+<{([([[(<>()){}]>(<<{{
+<{([{{}}[<[[[<>{}]]]>[]]
+```
