@@ -48,3 +48,67 @@ start,b,end
 (Each line in the above list corresponds to a single path; the caves visited by that path are listed in the order they are visited and separated by commas.)
 
 Note that in this cave system, cave `d` is never visited by any path: to do so, cave `b` would need to be visited twice (once on the way to cave `d` and a second time when returning from cave `d`), and since cave `b` is small, this is not allowed.
+
+Here is a slightly larger example:
+
+```
+dc-end
+HN-start
+start-kj
+dc-start
+dc-HN
+LN-dc
+HN-end
+kj-sa
+kj-HN
+kj-dc
+```
+
+The `19` paths through it are as follows:
+
+```
+start,HN,dc,HN,end
+start,HN,dc,HN,kj,HN,end
+start,HN,dc,end
+start,HN,dc,kj,HN,end
+start,HN,end
+start,HN,kj,HN,dc,HN,end
+start,HN,kj,HN,dc,end
+start,HN,kj,HN,end
+start,HN,kj,dc,HN,end
+start,HN,kj,dc,end
+start,dc,HN,end
+start,dc,HN,kj,HN,end
+start,dc,end
+start,dc,kj,HN,end
+start,kj,HN,dc,HN,end
+start,kj,HN,dc,end
+start,kj,HN,end
+start,kj,dc,HN,end
+start,kj,dc,end
+```
+
+Finally, this even larger example has `226` paths through it:
+
+```
+fs-end
+he-DX
+fs-he
+start-DX
+pj-DX
+end-zg
+zg-sl
+zg-pj
+pj-he
+RW-he
+fs-DX
+pj-RW
+zg-RW
+start-pj
+he-WI
+zg-he
+pj-fs
+start-RW
+```
+
+**How many paths through this cave system are there that visit small caves at most once?**
